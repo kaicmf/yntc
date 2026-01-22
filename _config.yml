@@ -3,13 +3,13 @@ title: 小凯的个人博客
 tagline: 学习、思考、分享
 email: contact@kaicmf.com
 description: 记录技术学习、费曼学习法实践、生活思考的个人博客
-baseurl: ""
+baseurl: "/yntc"
 url: https://kaicmf.github.io
 author: 小凯
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-chirpy
 
 # Plugins
 plugins:
@@ -31,6 +31,21 @@ exclude:
   - .gitignore
   - README.md
   - serve.py
+
+# Timezone
+timezone: Asia/Shanghai
+
+# Lang
+lang: zh-CN
+
+# Website analytics
+analytics:
+  google:
+    id: ""
+
+# Paginate
+paginate: 10
+paginate_path: /page/:num/
 
 # Directory
 source_dir: source
