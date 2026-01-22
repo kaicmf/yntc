@@ -1,2 +1,0 @@
----
-BUNDLE_BUILD__BIGDECIMAL: "--without-cflags=-march=native"
