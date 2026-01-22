@@ -1,0 +1,35 @@
+{
+  "name": "kaicmf-blog",
+  "version": "1.0.0",
+  "description": "小凯的个人博客 - 使用Hexo构建",
+  "main": "index.js",
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server",
+    "start": "hexo server --draft",
+    "new": "hexo new"
+  },
+  "keywords": [
+    "hexo",
+    "blog",
+    "个人博客"
+  ],
+  "author": "小凯",
+  "license": "MIT",
+  "dependencies": {
+    "hexo": "^6.3.0",
+    "hexo-cli": "^4.1.1",
+    "hexo-deployer-git": "^3.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-search": "^2.4.1",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-marked": "^6.0.0",
+    "hexo-renderer-stylus": "^2.1.0",
+    "hexo-server": "^3.0.0"
+  }
+}
