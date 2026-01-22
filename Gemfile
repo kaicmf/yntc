@@ -17,7 +17,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-seo-tag", "~> 2.8"
   gem "jekyll-sitemap", "~> 1.4"
-  gem "jekyll-paginate-v2", "~> 3.0"
+  gem "jekyll-paginate", "~> 1.1"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -33,5 +33,5 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Lock `http_parser.rb` to `v0.6.x` on JRuby. If you upgrade to a newer version of Rakefile, you may need to tweak this constraint.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-# Theme
-gem "minima", "~> 2.5"
+# Theme - Chirpy
+gem "jekyll-theme-chirpy", "~> 6.0"
