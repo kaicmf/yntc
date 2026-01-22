@@ -1,4 +1,4 @@
-name: Build and Deploy Jekyll Site
+name: Publish Static Pages
 
 on:
   push:
@@ -7,27 +7,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  publish:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: true
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
 
-      - name: Build with Jekyll
-        run: bundle exec jekyll build
-        env:
-          JEKYLL_ENV: production
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: '.'
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+        id: deployment
+        uses: actions/deploy-pages@v2
 
