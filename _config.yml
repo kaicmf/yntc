@@ -2,8 +2,7 @@
 title: 小凯的个人博客
 tagline: 学习、思考、分享
 email: contact@kaicmf.com
-description: >-
-  记录技术学习、费曼学习法实践、生活思考的个人博客
+description: 记录技术学习、费曼学习法实践、生活思考的个人博客
 baseurl: ""
 url: https://kaicmf.github.io
 author: 小凯
@@ -11,54 +10,27 @@ author: 小凯
 # Build settings
 markdown: kramdown
 theme: minima
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate-v2
 
-# Pagination
-pagination:
-  enabled: true
-  per_page: 10
-  permalink: /page/:num/
-  title: "博客第:num页"
+# Permalink structure
+permalink: /:year/:month/:day/:title/
 
-# Include
-include:
-  - _pages
+# Show excerpts in lists
+show_excerpts: true
 
-# Exclude
+# Exclude files
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - .gitignore
   - README.md
-
-# Feed
-feed:
-  posts_limit: 10
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:year/:month/:day/:slug/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "小凯"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
+  - serve.py
 
 # Directory
 source_dir: source
