@@ -1,22 +1,64 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
-# Site
+# Jekyll Site Configuration
 title: 小凯的个人博客
-subtitle: '学习、思考、分享'
-description: '记录技术学习、生活感悟、费曼学习法实践'
-keywords: '技术, 学习, 思考'
-author: 小凯
-language: zh-CN
-timezone: 'Asia/Shanghai'
-
-# URL
+tagline: 学习、思考、分享
+email: contact@kaicmf.com
+description: >-
+  记录技术学习、费曼学习法实践、生活思考的个人博客
+baseurl: ""
 url: https://kaicmf.github.io
-root: /
-permalink: :year/:month/:day/:title/
-permalink_defaults:
-  lang: en
+author: 小凯
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+
+# Pagination
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: /page/:num/
+  title: "博客第:num页"
+
+# Include
+include:
+  - _pages
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .gitignore
+  - README.md
+
+# Feed
+feed:
+  posts_limit: 10
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:slug/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "小凯"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
 
 # Directory
 source_dir: source
