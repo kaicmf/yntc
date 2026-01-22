@@ -10,7 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 
 # About the jekyll gem, see: https://rubygems.org/gems/jekyll/
-gem "jekyll", "~> 4.3.0"
+gem "jekyll", "~> 4.2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -33,5 +33,6 @@ end
 # Lock `http_parser.rb` to `v0.6.x` on JRuby. If you upgrade to a newer version of Rakefile, you may need to tweak this constraint.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-# Theme - Chirpy
-gem "jekyll-theme-chirpy", "~> 6.0"
+# Theme - Minima (default)
+# gem "jekyll-theme-chirpy", "~> 6.0"
+gem "minima", "~> 2.5"
