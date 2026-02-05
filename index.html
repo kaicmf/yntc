@@ -1,146 +1,177 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>小店盟 AI 导航 - AI工具导航 | AI资讯 | AI应用大全</title>
-
-  <!-- SEO Meta -->
-  <meta name="description" content="小店盟 AI 导航，聚合全网优质 AI 工具、AI 资讯与应用教程，覆盖电商、内容创作、办公效率等多个领域。">
-  <meta name="keywords" content="AI工具,AI导航,AI应用,AI资讯,电商AI,内容创作AI">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://www.xdmeng.cn/">
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Think AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#64748b',
+                        background: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            }
+            .glass {
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+    </style>
 </head>
-
-<body class="bg-light">
-
-<!-- ================= Header ================= -->
-<header class="border-bottom bg-white">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-between py-3">
-      <h1 class="h4 mb-0">
-        <a href="/" class="text-decoration-none text-dark">小店盟 AI 导航</a>
-      </h1>
-      <nav>
-        <a href="/tools.html" class="me-3 text-dark">AI工具</a>
-        <a href="/news.html" class="me-3 text-dark">AI资讯</a>
-        <a href="/tutorials.html" class="me-3 text-dark">教程</a>
-        <a href="/about.html" class="text-dark">关于</a>
-      </nav>
-    </div>
-  </div>
-</header>
-
-<!-- ================= Main ================= -->
-<main class="container my-4">
-
-  <!-- 核心介绍（H2 非营销） -->
-  <section class="mb-4">
-    <h2 class="h5">发现实用 AI 工具，掌握 AI 最新动态</h2>
-    <p class="text-muted">
-      小店盟 AI 导航专注于 AI 工具整理、AI 行业资讯与落地应用教程，帮助个人与企业更高效地使用 AI。
-    </p>
-  </section>
-
-  <div class="row">
-
-    <!-- 左侧内容区 -->
-    <div class="col-lg-8">
-
-      <!-- AI 资讯列表 -->
-      <section class="mb-5">
-        <h2 class="h5 mb-3">最新 AI 资讯</h2>
-
-        <article class="mb-3 pb-3 border-bottom">
-          <h3 class="h6">
-            <a href="/post/ai-news-1.html" class="text-decoration-none">
-              最新 AI 模型发布，对内容创作产生哪些影响？
-            </a>
-          </h3>
-          <p class="text-muted small mb-0">
-            深度解析新一代 AI 模型在写作、图片生成、电商场景中的应用趋势。
-          </p>
-        </article>
-
-        <article class="mb-3 pb-3 border-bottom">
-          <h3 class="h6">
-            <a href="/post/ai-news-2.html" class="text-decoration-none">
-              AI 工具正在如何改变中小商家的运营方式
-            </a>
-          </h3>
-          <p class="text-muted small mb-0">
-            从选品、客服到广告投放，AI 工具带来的效率革命。
-          </p>
-        </article>
-
-      </section>
-
-      <!-- AI 工具分类 -->
-      <section>
-        <h2 class="h5 mb-3">AI 工具分类导航</h2>
-
-        <div class="row g-3">
-          <div class="col-md-6">
-            <div class="border rounded p-3 bg-white h-100">
-              <h3 class="h6">内容创作 AI</h3>
-              <p class="small text-muted mb-2">
-                写作、图片生成、视频剪辑相关 AI 工具
-              </p>
-              <a href="/tools/content.html" class="small">查看工具 →</a>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="border rounded p-3 bg-white h-100">
-              <h3 class="h6">电商 & 营销 AI</h3>
-              <p class="small text-muted mb-2">
-                选品、文案、广告、数据分析 AI 工具
-              </p>
-              <a href="/tools/ecommerce.html" class="small">查看工具 →</a>
-            </div>
-          </div>
+<body class="bg-background text-white min-h-screen flex flex-col items-center py-12 px-4">
+    <div class="w-full max-w-4xl">
+        <!-- 标题 -->
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 text-shadow">
+                To Think AI
+            </h1>
+            <p class="text-secondary mt-4 text-lg">将你的草率想法转变为专业的结构化 Prompt</p>
         </div>
-      </section>
 
+        <!-- 输入区域 -->
+        <div class="mb-8 glass rounded-xl p-6">
+            <label for="input" class="block text-lg font-medium mb-2">输入你的想法</label>
+            <textarea id="input" rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-primary resize-none transition-all"></textarea>
+            <div class="mt-4 flex justify-end">
+                <button id="evolveBtn" class="bg-primary hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-lg transition-all flex items-center gap-2">
+                    <span>进化指令</span>
+                    <i class="fa fa-magic"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- 输出区域 -->
+        <div class="glass rounded-xl p-6">
+            <div class="flex justify-between items-center mb-2">
+                <label for="output" class="block text-lg font-medium">进化结果</label>
+                <button id="copyBtn" class="text-secondary hover:text-white transition-colors flex items-center gap-1">
+                    <i class="fa fa-copy"></i>
+                    <span>复制</span>
+                </button>
+            </div>
+            <textarea id="output" rows="8" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-4 focus:outline-none resize-none transition-all" readonly></textarea>
+        </div>
+
+        <!-- API Key 设置 -->
+        <div class="mt-8 glass rounded-xl p-6">
+            <label for="apiKey" class="block text-lg font-medium">DeepSeek API Key</label>
+            <input type="password" id="apiKey" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="请输入你的 API Key">
+        </div>
     </div>
 
-    <!-- 右侧侧边栏 -->
-    <aside class="col-lg-4">
+    <script>
+        // 配置
+        const BASE_URL = 'https://api.deepseek.com';
+        const MODEL = 'deepseek-chat';
+        const SYSTEM_PROMPT = '设定为一个提示词专家，将用户的草率想法转变为专业的结构化 Prompt。';
 
-      <!-- 热门推荐 -->
-      <section class="mb-4 bg-white border rounded p-3">
-        <h2 class="h6">热门 AI 工具</h2>
-        <ul class="list-unstyled mb-0 small">
-          <li><a href="#">AI 写作助手</a></li>
-          <li><a href="#">AI 图片生成</a></li>
-          <li><a href="#">AI 视频剪辑</a></li>
-          <li><a href="#">AI 电商选品</a></li>
-        </ul>
-      </section>
+        // DOM 元素
+        const inputEl = document.getElementById('input');
+        const outputEl = document.getElementById('output');
+        const evolveBtn = document.getElementById('evolveBtn');
+        const copyBtn = document.getElementById('copyBtn');
+        const apiKeyEl = document.getElementById('apiKey');
 
-      <!-- SEO 文本块 -->
-      <section class="bg-white border rounded p-3">
-        <h2 class="h6">关于小店盟 AI 导航</h2>
-        <p class="small text-muted mb-0">
-          本站持续整理 AI 工具与行业动态，适合创业者、电商从业者及内容创作者使用。
-        </p>
-      </section>
+        // 调用 API
+        async function callDeepSeekAPI(userPrompt) {
+            const apiKey = apiKeyEl.value.trim();
+            if (!apiKey) {
+                alert('请先输入 API Key');
+                return;
+            }
 
-    </aside>
+            try {
+                evolveBtn.disabled = true;
+                evolveBtn.innerHTML = '<i class="fa fa-spinner fa-spin"></i><span>处理中...</span>';
 
-  </div>
-</main>
+                const response = await fetch(`${BASE_URL}/v1/chat/completions`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${apiKey}`
+                    },
+                    body: JSON.stringify({
+                        model: MODEL,
+                        messages: [
+                            { role: 'system', content: SYSTEM_PROMPT },
+                            { role: 'user', content: userPrompt }
+                        ],
+                        temperature: 0.7
+                    })
+                });
 
-<!-- ================= Footer ================= -->
-<footer class="border-top bg-white mt-5">
-  <div class="container py-4 text-muted small">
-    © 2026 xdmeng.cn · AI 工具导航与资讯平台
-  </div>
-</footer>
+                if (!response.ok) {
+                    throw new Error(`API 请求失败: ${response.status}`);
+                }
 
+                const data = await response.json();
+                const result = data.choices[0].message.content;
+                outputEl.value = result;
+            } catch (error) {
+                console.error('错误:', error);
+                outputEl.value = `错误: ${error.message}`;
+            } finally {
+                evolveBtn.disabled = false;
+                evolveBtn.innerHTML = '<span>进化指令</span><i class="fa fa-magic"></i>';
+            }
+        }
+
+        // 复制功能
+        function copyToClipboard() {
+            const text = outputEl.value;
+            if (!text) {
+                alert('没有可复制的内容');
+                return;
+            }
+
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = '<i class="fa fa-check"></i><span>已复制</span>';
+                setTimeout(() => {
+                    copyBtn.innerHTML = originalText;
+                }, 2000);
+            }).catch(err => {
+                console.error('复制失败:', err);
+                alert('复制失败，请手动复制');
+            });
+        }
+
+        // 事件监听
+        evolveBtn.addEventListener('click', () => {
+            const userInput = inputEl.value.trim();
+            if (!userInput) {
+                alert('请输入你的想法');
+                return;
+            }
+            callDeepSeekAPI(userInput);
+        });
+
+        copyBtn.addEventListener('click', copyToClipboard);
+
+        // 按 Enter 键提交 (Shift+Enter 换行)
+        inputEl.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                evolveBtn.click();
+            }
+        });
+    </script>
 </body>
 </html>
